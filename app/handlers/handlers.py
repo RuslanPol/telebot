@@ -38,7 +38,8 @@ async def ai(callback: CallbackQuery,state:FSMContext):
 async def ai(message:Message,state:FSMContext):
     await state.set_state(Work.process)
     res = await generate(message.text)
-    await message.answer(res.choices[0].message.content)
+    await message.answer(f"{res.choices[0].message.content}\n\n" 
+                                  f"To access the main menu, select the /start command")
     await state.clear()
         
 
