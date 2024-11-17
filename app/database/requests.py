@@ -1,6 +1,6 @@
-from app.database.models import async_session
-from app.database.models import User,PopQuestion,Answer
 from sqlalchemy import select
+from app.database.models import User, PopQuestion, Answer
+from app.database.models import async_session
 
 
 def connection(func):
