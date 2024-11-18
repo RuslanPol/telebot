@@ -4,7 +4,6 @@ import logging
 from aiogram import Bot, Dispatcher
 from dotenv import load_dotenv
 from app.handlers.handlers import router as heandlers_router
-from app.handlers.registration_handlers import router as registration_router
 from app.database.models import async_main
 
 # Загрузка переменных окружения из файла .env
@@ -19,7 +18,6 @@ dp = Dispatcher()
 async def main():
     await async_main()
     dp.include_router(heandlers_router)
-    dp.include_router(registration_router)
     await dp.start_polling(bot)
 
 
