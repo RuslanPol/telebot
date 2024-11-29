@@ -24,5 +24,5 @@ SQLite, и подключение ИИ.
 
 программа запускается 
 
- python run.py
+ python main.py
 
