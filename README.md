@@ -14,7 +14,7 @@
 
  pip install aiogram
 
- pip install python dotenv
+ pip install python-dotenv
 
  pip install aiosqlite
 
